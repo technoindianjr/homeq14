@@ -2,6 +2,9 @@ package com.akshay.quarguard.di.module
 
 import androidx.lifecycle.ViewModelProviders
 import com.akshay.quarguard.ui.base.BaseActivity
+import com.akshay.quarguard.ui.login.LoginViewModel
+import com.akshay.quarguard.ui.main.MainViewModel
+import com.akshay.quarguard.ui.signup.SignupViewModel
 import com.akshay.quarguard.ui.splash.SplashViewModel
 import com.akshay.quarguard.utils.ViewModelProviderFactory
 import com.akshay.quarguard.utils.network.NetworkHelper
@@ -33,4 +36,37 @@ class ActivityModule(private val activity: BaseActivity<*>) {
             SplashViewModel(schedulerProvider, compositeDisposable, networkHelper)
             //this lambda creates and return SplashViewModel
         }).get(SplashViewModel::class.java)
+
+    @Provides
+    fun provideMainViewModel(
+        schedulerProvider: SchedulerProvider,
+        compositeDisposable: CompositeDisposable,
+        networkHelper: NetworkHelper
+    ): MainViewModel = ViewModelProviders.of(
+        activity, ViewModelProviderFactory(MainViewModel::class) {
+            MainViewModel(schedulerProvider, compositeDisposable, networkHelper)
+            //this lambda creates and return MainViewModel
+        }).get(MainViewModel::class.java)
+
+    @Provides
+    fun provideSignupViewModel(
+        schedulerProvider: SchedulerProvider,
+        compositeDisposable: CompositeDisposable,
+        networkHelper: NetworkHelper
+    ): SignupViewModel = ViewModelProviders.of(
+        activity, ViewModelProviderFactory(SignupViewModel::class) {
+            SignupViewModel(schedulerProvider, compositeDisposable, networkHelper)
+            //this lambda creates and return SignupViewModel
+        }).get(SignupViewModel::class.java)
+
+    @Provides
+    fun provideLoginViewModel(
+        schedulerProvider: SchedulerProvider,
+        compositeDisposable: CompositeDisposable,
+        networkHelper: NetworkHelper
+    ): LoginViewModel = ViewModelProviders.of(
+        activity, ViewModelProviderFactory(LoginViewModel::class) {
+            LoginViewModel(schedulerProvider, compositeDisposable, networkHelper)
+            //this lambda creates and return LoginViewModel
+        }).get(LoginViewModel::class.java)
 }

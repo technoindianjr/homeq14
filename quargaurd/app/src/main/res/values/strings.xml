@@ -9,4 +9,19 @@
     <string name="server_connection_error">Not able to connect, please retry again</string>
     <string name="permission_denied">Permission Denied</string>
     <string name="network_login_again">Please log in again</string>
+
+    <string name="email_field_empty">Email can\'t be empty</string>
+    <string name="password_field_empty">Password can\'t be empty</string>
+    <string name="email_field_invalid">Not a valid email</string>
+    <string name="password_field_small_length">Password less than 6 digits</string>
+    <string name="email_field_hint">Enter your email</string>
+    <string name="password_field_hint">Enter your password</string>
+    <string name="login_button">Login</string>
+    <string name="register_or_login">OR</string>
+    <string name="register">Sign Up with Email</string>
+
+    <string name="name_field_hint">Enter your full name</string>
+    <string name="password_field_choose_hint">Choose your password</string>
+    <string name="register_button">Sign up</string>
+    <string name="login">Login with Email</string>
 </resources>

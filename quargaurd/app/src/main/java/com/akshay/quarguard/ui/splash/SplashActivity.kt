@@ -1,10 +1,13 @@
 package com.akshay.quarguard.ui.splash
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import com.akshay.quarguard.R
 import com.akshay.quarguard.di.component.ActivityComponent
 import com.akshay.quarguard.ui.base.BaseActivity
+import com.akshay.quarguard.ui.main.MainActivity
+import com.akshay.quarguard.ui.signup.SignupActivity
 import com.akshay.quarguard.utils.common.Event
 
 class SplashActivity : BaseActivity<SplashViewModel>() {
@@ -28,13 +31,15 @@ class SplashActivity : BaseActivity<SplashViewModel>() {
         // view model also provided the Bundle in the event that is needed for the Activity
         viewModel.launchRegister.observe(this, Observer<Event<Map<String, String>>> {
             it.getIfNotHandled()?.run {
-                // startActivity(Intent(applicationContext, SignupActivity::class.java))
+                startActivity(Intent(applicationContext, SignupActivity::class.java))
+                finish()
             }
         })
 
         viewModel.launchMain.observe(this, Observer<Event<Map<String, String>>> {
             it.getIfNotHandled()?.run {
-                // startActivity(Intent(applicationContext, MainActivity::class.java))
+                startActivity(Intent(applicationContext, MainActivity::class.java))
+                finish()
             }
         })
     }

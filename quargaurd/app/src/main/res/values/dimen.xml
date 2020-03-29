@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Login Screen -->
+    <dimen name="height_width_clear">24dp</dimen>
+    <dimen name="margin_end_clear">16dp</dimen>
+    <dimen name="height_logo">58dp</dimen>
+    <dimen name="et_margin_left_right">30dp</dimen>
+    <dimen name="margin_bottom_logo">42dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="tv_standard">16sp</dimen>
+    <dimen name="btn_login_height">55dp</dimen>
+    <dimen name="btn_margin_bottom">45dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_margin_top">16dp</dimen>
+
+</resources>

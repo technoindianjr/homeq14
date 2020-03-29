@@ -62,7 +62,7 @@ dependencies {
     // JARs
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    // Androidx appcompat Library
+    // Android Support Library
     implementation "androidx.appcompat:appcompat:$app_compat_version"
 
     // Constraint Layout
@@ -70,12 +70,6 @@ dependencies {
 
     // Material Design
     implementation "com.google.android.material:material:$material_version"
-
-    // RecyclerView
-    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
-
-    // CardView
-    implementation "androidx.cardview:cardview:$support_library_version"
 
     // ViewModel and LiveData
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
@@ -113,11 +107,11 @@ dependencies {
     // logger
     implementation "com.jakewharton.timber:timber:$timber_version"
 
-    // Camera
-    implementation 'com.mindorks:paracamera:0.2.2'
-
     // Parser
     implementation "com.google.code.gson:gson:$gson_version"
+
+    // Camera
+    implementation 'com.mindorks:paracamera:0.2.2'
 
     // Debugging
     debugImplementation "com.amitshekhar.android:debug-db:$debug_db_version"
