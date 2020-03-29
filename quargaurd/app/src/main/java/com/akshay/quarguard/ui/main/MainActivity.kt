@@ -1,7 +1,8 @@
-package com.akshay.quarguard
+package com.akshay.quarguard.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.akshay.quarguard.R
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,5 +1,6 @@
 package com.akshay.quarguard.di.module
 
+import com.akshay.quarguard.ui.base.BaseActivity
 import dagger.Module
 
 /**
@@ -13,6 +14,6 @@ import dagger.Module
  * BaseViewModel subclass as parameter
  */
 @Module
-class ActivityModule() {
+class ActivityModule(private val activity: BaseActivity<*>) {
 
 }
