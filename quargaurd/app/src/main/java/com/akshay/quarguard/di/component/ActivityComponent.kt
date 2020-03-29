@@ -2,6 +2,7 @@ package com.akshay.quarguard.di.component
 
 import com.akshay.quarguard.di.ActivityScope
 import com.akshay.quarguard.di.module.ActivityModule
+import com.akshay.quarguard.ui.splash.SplashActivity
 import dagger.Component
 
 /**
@@ -16,5 +17,5 @@ import dagger.Component
 )
 interface ActivityComponent {
 
-
+    fun inject(splashActivity: SplashActivity)
 }
