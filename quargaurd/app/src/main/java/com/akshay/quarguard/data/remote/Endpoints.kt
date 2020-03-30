@@ -7,9 +7,8 @@ package com.akshay.quarguard.data.remote
 
 object Endpoints {
 
-    const val DUMMY = "dummy/list"
-    const val LOGIN = "login/quargaurd"
-    const val SIGNUP = "signup/quargaurd"
+    const val LOGIN = "login"
+    const val SIGNUP = "register"
     const val UPLOAD_IMAGE = "image"
     const val FETCH_INFO = "me"
 }

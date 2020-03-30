@@ -1,13 +1,16 @@
 package com.akshay.quarguard.data.remote.response
 
+import android.os.Parcelable
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
 /**
  * Created by akshaynandwana on
  * 29, March, 2020
  **/
 
+@Parcelize
 data class SignUpResponse(
     @Expose
     @SerializedName("statusCode")
@@ -26,19 +29,17 @@ data class SignUpResponse(
     var accessToken: String,
 
     @Expose
-    @SerializedName("userId")
-    var userId: String,
+    @SerializedName("user")
+    var userId: User
 
-    @Expose
-    @SerializedName("userName")
-    var userName: String,
+) : Parcelable {
 
-    @Expose
-    @SerializedName("userEmail")
-    var userEmail: String,
+    @Parcelize
+    data class User(
 
-    @Expose
-    @SerializedName("profilePicUrl")
-    var profilePicUrl: String?
+        @Expose
+        @SerializedName("name1")
+        var userName: String
 
-)
+    ) : Parcelable
+}

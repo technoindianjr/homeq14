@@ -9,14 +9,31 @@ import com.google.gson.annotations.SerializedName
  **/
 data class SignUpRequest(
     @Expose
-    @SerializedName("email")
-    var email: String,
+    @SerializedName("name1")
+    var name1: String,
+
+    @Expose
+    @SerializedName("name2")
+    var name2: String,
+
+    @Expose
+    @SerializedName("phoneNumber1")
+    var phoneNumber1: String,
+
+    @Expose
+    @SerializedName("phoneNumber2")
+    var phoneNumber2: String,
 
     @Expose
     @SerializedName("password")
     var password: String,
 
     @Expose
-    @SerializedName("name")
-    var name: String
+    @SerializedName("age")
+    var age: Int,
+
+    @Expose
+    @SerializedName("gender")
+    var gender: String
+
 )
