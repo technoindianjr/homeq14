@@ -64,7 +64,6 @@ class SignupActivity : BaseActivity<SignupViewModel>() {
 
         tv_register.setOnClickListener { viewModel.launchLogin() }
 
-        iv_clear.setOnClickListener { viewModel.clearEmailField() }
     }
 
     override fun setupObservers() {
@@ -89,7 +88,6 @@ class SignupActivity : BaseActivity<SignupViewModel>() {
         })
 
         viewModel.emailField.observe(this, Observer {
-            iv_clear.visibility = if (it.length == 0) View.INVISIBLE else View.VISIBLE
             if (et_email.text.toString() != it)
                 et_email.setText(it)
         })

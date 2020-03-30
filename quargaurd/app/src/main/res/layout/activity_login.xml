@@ -27,7 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_medium"
-        android:hint="@string/email_field_hint"
+        android:hint="@string/phone_number_field_hint"
         app:boxStrokeColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toTopOf="@+id/layout_password"
         app:layout_constraintEnd_toEndOf="@+id/iv_logo"
