@@ -46,20 +46,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageView
-        android:id="@+id/iv_clear"
-        android:layout_width="@dimen/height_width_clear"
-        android:layout_height="@dimen/height_width_clear"
-        android:layout_marginEnd="@dimen/margin_end_clear"
-        android:src="@mipmap/ic_launcher"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/layout_email"
-        app:layout_constraintEnd_toEndOf="@+id/layout_email"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/layout_email"
-        app:layout_constraintTop_toTopOf="@+id/layout_email"
-        tools:ignore="contentDescription" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_password"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"

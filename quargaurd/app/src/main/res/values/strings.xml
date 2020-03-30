@@ -17,7 +17,7 @@
     <string name="password_field_hint">Enter your password</string>
     <string name="login_button">Login</string>
     <string name="register_or_login">OR</string>
-    <string name="register">Sign Up with Email</string>
+    <string name="register">Sign Up with Phone Number</string>
 
     <string name="name_field_hint">Enter your full name</string>
     <string name="name_comp_field_hint">Enter your guardian full name</string>
@@ -30,5 +30,5 @@
     <string name="address_field_hint">Enter your full address</string>
     <string name="travel_field_hint">Enter your complete travel history</string>
     <string name="register_button">Sign up</string>
-    <string name="login">Login with Email</string>
+    <string name="login">Login with Phone Number</string>
 </resources>

@@ -50,8 +50,6 @@ class LoginActivity : BaseActivity<LoginViewModel>() {
         btn_login.setOnClickListener { viewModel.onLogin() }
 
         tv_register.setOnClickListener { viewModel.goToRegister() }
-
-        iv_clear.setOnClickListener { viewModel.clearEmailField() }
     }
 
     override fun setupObservers() {
@@ -73,7 +71,6 @@ class LoginActivity : BaseActivity<LoginViewModel>() {
         })
 
         viewModel.emailField.observe(this, Observer {
-            iv_clear.visibility = if (it.length == 0) View.INVISIBLE else View.VISIBLE
             if (et_email.text.toString() != it)
                 et_email.setText(it)
         })

@@ -10,23 +10,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_logo"
+            android:layout_marginStart="@dimen/et_margin_left_right"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/et_margin_left_right"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toTopOf="@+id/tv_register_head"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:ignore="contentDescription" />
+
         <TextView
             android:id="@+id/tv_register_head"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/et_margin_left_right"
-            android:layout_marginTop="@dimen/margin_bottom_logo"
             android:layout_marginEnd="@dimen/et_margin_left_right"
             android:layout_marginBottom="@dimen/margin_bottom_logo"
+            android:gravity="center"
             android:text="@string/register_button"
             android:textSize="20sp"
-            android:gravity="center"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/layout_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo"
             app:layout_constraintVertical_chainStyle="packed"
             tools:ignore="contentDescription" />
 
